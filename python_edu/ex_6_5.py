@@ -6,6 +6,7 @@
 
 # text[24:29]
 text = "X-DSPAM-Confidence:    0.8475"
-num = text.find("0",24,29)
+fpos = text.find(":")
 
-print(float(num))
+intpos = text[fpos+5:]
+print(intpos)
