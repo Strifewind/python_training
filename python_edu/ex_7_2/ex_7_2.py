@@ -17,6 +17,6 @@ def sum_numbers(numbers):
         return 0
     return numbers[0] + sum_numbers(numbers[1:])
 
-sum_numbers(fl)
+sum_numbers(fl.float())
 
 print("Done")
